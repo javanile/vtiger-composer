@@ -1,0 +1,10 @@
+{
+    "require": {
+        "composer/composer": "1.10.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Javanile\\VtigerComposer\\": "src/"
+        }
+    }
+}
