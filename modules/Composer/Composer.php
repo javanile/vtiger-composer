@@ -17,8 +17,8 @@ class Composer
         } else if ($eventType == 'module.preinstall') {
 
         } else if ($eventType == 'module.postupdate') {
-            //$composerInstaller->update();
-            $composerInstaller->install();
+            $composerInstaller->update();
+            //$composerInstaller->install();
         } else if ($eventType == 'module.preupdate') {
 
         } else if ($eventType == 'module.preuninstall') {

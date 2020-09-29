@@ -54,10 +54,11 @@ class Installer
      */
     public function install()
     {
-        echo "\n";
-        $this->composerUpdate();
+        $this->printLine();
+        //$this->composerUpdate();
         $this->updateRootComposerFile();
         $this->composerDumpAutoload();
+        $this->composerInstall();
     }
 
     /**
@@ -65,7 +66,11 @@ class Installer
      */
     public function update()
     {
-
+        $this->printLine();
+        //$this->composerUpdate();
+        $this->updateRootComposerFile();
+        $this->composerDumpAutoload();
+        $this->composerInstall();
     }
 
     /**
@@ -73,7 +78,7 @@ class Installer
      */
     protected function updateRootComposerFile()
     {
-        echo "Updating root composer.json file\n";
+        $this->printLine('Updating root composer.json file');
         $contents = file_get_contents($this->rootComposerJson->getPath());
         $manipulator = new JsonManipulator($contents);
         $definition = $this->composerJson->read();
@@ -111,7 +116,7 @@ class Installer
      */
     protected function composerInstall()
     {
-        $input = new ArrayInput(array('command' => 'update'));
+        $input = new ArrayInput(array('command' => 'install'));
         $application = new Application();
         $application->setAutoExit(false);
         $application->run($input);
@@ -137,5 +142,15 @@ class Installer
         $application = new Application();
         $application->setAutoExit(false);
         $application->run($input);
+    }
+
+    /**
+     * @param $string
+     */
+    protected function printLine($string)
+    {
+        if (php_sapi_name() === 'cli') {
+            echo $string."\n";
+        }
     }
 }

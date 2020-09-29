@@ -9,7 +9,7 @@ vendor:
 	@docker-compose run --rm vtiger bash -c "cd modules/Composer && composer install"
 
 dist:
-	@zip -qq -r dist/Composer.zip manifest.xml languages
+	@zip -qq -r dist/Composer.zip manifest.xml languages LICENSE modules
 
 import: dist up
 	@docker-compose exec vtiger php -f /var/www/html/vtlib/tools/console.php -- --import=/app/dist/Composer.zip
