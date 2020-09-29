@@ -3,7 +3,6 @@
 namespace Javanile\VtigerComposer;
 
 use Composer\Console\Application;
-use Composer\Command\UpdateCommand;
 use Composer\Json\JsonFile;
 use Composer\Json\JsonManipulator;
 use Symfony\Component\Console\Input\ArrayInput;
@@ -57,10 +56,7 @@ class Installer
     {
         echo "\n";
         $this->composerUpdate();
-
-        $this->updateAutoload('autoload');
-        $this->updateAutoload('autoload-dev');
-
+        $this->updateRootComposerFile();
         $this->composerDumpAutoload();
     }
 
@@ -69,30 +65,45 @@ class Installer
      */
     public function update()
     {
-        $input = new ArrayInput(array('command' => 'require', 'packages' => ['javanile/vtiger-composer']));
-        $application = new Application();
-        $application->run($input);
+
     }
 
     /**
      *
      */
-    protected function updateAutoload($mainKey)
+    protected function updateRootComposerFile()
     {
+        echo "Updating root composer.json file\n";
         $contents = file_get_contents($this->rootComposerJson->getPath());
-        $composerDefinition = $this->rootComposerJson->read();
         $manipulator = new JsonManipulator($contents);
+        $definition = $this->composerJson->read();
+        $rootDefinition = $this->rootComposerJson->read();
 
-
-
-        $psr4 = isset($composerDefinition['psr4']) ? $composerDefinition['psr4'] : [];
-
-
-        $psr4['Ciao\\Coa\\'] = 'src/';
-
-        $manipulator->addSubNode($mainKey, 'psr4', $psr4);
+        $this->updateAutoload('autoload', $manipulator, $definition, $rootDefinition);
+        $this->updateAutoload('autoload-dev', $manipulator, $definition, $rootDefinition);
 
         file_put_contents($this->rootComposerJson->getPath(), $manipulator->getContents());
+    }
+
+    /**
+     * @param $mainKey
+     * @param $manipulator
+     * @param $definition
+     * @param $rootDefinition
+     */
+    protected function updateAutoload($mainKey, $manipulator, $definition, $rootDefinition)
+    {
+        foreach (['psr-4', 'psr-0', 'classmap', 'files'] as $subKey) {
+            if (empty($definition[$mainKey][$subKey])) {
+                continue;
+            }
+
+            $values = isset($rootDefinition[$mainKey][$subKey])
+                ? array_merge($rootDefinition[$mainKey][$subKey], $definition[$mainKey][$subKey])
+                : $definition[$mainKey][$subKey];
+
+            $manipulator->addSubNode($mainKey, $subKey, $values);
+        }
     }
 
     /**
