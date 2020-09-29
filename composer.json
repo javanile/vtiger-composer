@@ -5,7 +5,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Cavallo\\Cane\\": "path/"
+            "\\Cavallo\\Cane\\": "modules/Canevallo"
         }
+    },
+    "require": {
+        "javanile/vtiger-composer": "^0.0.1"
     }
 }
