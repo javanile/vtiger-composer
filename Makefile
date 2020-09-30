@@ -12,9 +12,13 @@ dist:
 	@zip -qq -r dist/Composer.zip manifest.xml languages LICENSE modules
 
 import: dist up
+	@docker-compose run --rm vtiger bash -c "rm logs/composer.log || true"
+	@echo "\n====[ IMPORT ]===="
 	@docker-compose exec vtiger php -f /var/www/html/vtlib/tools/console.php -- --import=/app/dist/Composer.zip
-	@docker-compose exec vtiger cat /var/www/html/composer.json
+	@#@docker-compose exec vtiger cat /var/www/html/composer.json
 
 update: dist up
+	@docker-compose run --rm vtiger bash -c "rm logs/composer.log || true"
+	@echo "\n====[ UPDATE ]===="
 	@docker-compose exec vtiger php -f /var/www/html/vtlib/tools/console.php -- --update=/app/dist/Composer.zip
-	@docker-compose exec vtiger cat /var/www/html/composer.json
+	@#@docker-compose exec vtiger cat /var/www/html/composer.json

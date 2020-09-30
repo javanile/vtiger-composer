@@ -381,6 +381,7 @@ class Installer
             $this->package->getDevRequires()
         );
 
+        var_dump(get_class($this->io));
         $this->io->writeError('<info>Loading composer repositories with package information</info>');
 
         // creating repository pool

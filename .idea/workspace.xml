@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca789492-ba9e-460d-8123-3138f9240ddb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Logger.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Output.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Composer.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Composer.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/compile" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/compile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/composer" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/composer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/IO/ConsoleIO.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/IO/ConsoleIO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/justinrainbow/json-schema/bin/validate-json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/justinrainbow/json-schema/bin/validate-json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/seld/jsonlint/bin/jsonlint" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/seld/jsonlint/bin/jsonlint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/stream_output_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/stream_output_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/.dot/a" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/.dot/a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/.dot/b/c.neon" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/.dot/b/c.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/.dot/b/d.neon" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/.dot/b/d.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/A/B/C/abc.dat" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/A/B/C/abc.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/A/B/ab.dat" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/A/B/ab.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/A/a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/A/a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/copy/A/B/C/abc.dat.copy" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/copy/A/B/C/abc.dat.copy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/copy/A/B/ab.dat.copy" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/copy/A/B/ab.dat.copy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/copy/A/a.dat.copy" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/copy/A/a.dat.copy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/a" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/b/c.neon" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/b/c.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/r+e.gex[c]a(r)s/dir/bar.dat" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/r+e.gex[c]a(r)s/dir/bar.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/with space/foo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/with space/foo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/process/Tests/ErrorProcessInitiator.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/process/Tests/ErrorProcessInitiator.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iBVirqs9itq98dNUGYQblkCcbo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca789492-ba9e-460d-8123-3138f9240ddb" name="Default Changelist" comment="" />
+      <created>1601381101218</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601381101218</updated>
+      <workItem from="1601381102279" duration="21750000" />
+      <workItem from="1601467852645" duration="10681000" />
+    </task>
+    <task id="LOCAL-00001" summary="real first commit">
+      <created>1601388158482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601388158483</updated>
+    </task>
+    <task id="LOCAL-00002" summary="real first commit">
+      <created>1601388176891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601388176891</updated>
+    </task>
+    <task id="LOCAL-00003" summary="real first commit">
+      <created>1601388709538</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601388709538</updated>
+    </task>
+    <task id="LOCAL-00004" summary="real first commit">
+      <created>1601394262119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601394262119</updated>
+    </task>
+    <task id="LOCAL-00005" summary="real first commit">
+      <created>1601396781534</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601396781534</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix installer">
+      <created>1601399203826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601399203826</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix installer">
+      <created>1601403784128</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601403784128</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="real first commit" />
+    <MESSAGE value="fix installer" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix installer" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="644" y="355" width="622" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601386271910">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="644" y="355" width="622" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1601386271910" />
+    <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601482969905">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1601482969905" />
+    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2" timestamp="1601403783966">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1601403783966" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601403785354">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601403785354" />
+    <state x="651" y="292" width="803" height="522" key="find.popup" timestamp="1601480384316">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="651" y="292" width="803" height="522" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1601480384316" />
+    <state x="685" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601481847971">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="685" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1601481847971" />
+  </component>
+</project>

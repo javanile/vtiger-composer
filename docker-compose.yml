@@ -13,6 +13,7 @@ services:
       - COMPOSER_DISABLE_XDEBUG_WARN=1
     volumes:
       - .:/app
+      - ./logs:/var/lib/vtiger/logs
       - ./modules/Composer:/var/www/html/modules/Composer
       - vtiger:/var/lib/vtiger
     ports:

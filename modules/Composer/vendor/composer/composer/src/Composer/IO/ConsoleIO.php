@@ -153,6 +153,7 @@ class ConsoleIO extends BaseIO
      */
     private function doWrite($messages, $newline, $stderr, $verbosity, $raw = false)
     {
+        var_dump($messages);
         $sfVerbosity = $this->verbosityMap[$verbosity];
         if ($sfVerbosity > $this->output->getVerbosity()) {
             return;
@@ -181,6 +182,7 @@ class ConsoleIO extends BaseIO
             }, (array) $messages);
         }
 
+        var_dump(get_class($this->output));
         if (true === $stderr && $this->output instanceof ConsoleOutputInterface) {
             $this->output->getErrorOutput()->write($messages, $newline, $sfVerbosity);
             $this->lastMessageErr = implode($newline ? "\n" : '', (array) $messages);

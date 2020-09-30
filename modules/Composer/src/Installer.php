@@ -36,6 +36,11 @@ class Installer
 
     /**
      *
+     */
+    protected $output;
+
+    /**
+     *
      *
      * @param $moduleName
      * @param $composerFile
@@ -47,6 +52,7 @@ class Installer
         $this->composerJson = new JsonFile($this->composerFile);
         $this->rootComposerFile = getcwd() . '/composer.json';
         $this->rootComposerJson = new JsonFile($this->rootComposerFile);
+        $this->output = Factory::createOutput();
     }
 
     /**
@@ -54,11 +60,17 @@ class Installer
      */
     public function install()
     {
-        $this->printLine();
-        //$this->composerUpdate();
-        $this->updateRootComposerFile();
-        $this->composerDumpAutoload();
-        $this->composerInstall();
+        try {
+            $this->printLine();
+            Logger::log("INSTALL module={$this->moduleName} file={$this->composerFile}", true);
+            //$this->composerUpdate();
+            $this->updateRootComposerFile();
+            //$this->composerDumpAutoload();
+            //$this->composerInstall();
+            $this->requirePackages();
+        } catch (\Exception $e) {
+
+        }
     }
 
     /**
@@ -66,11 +78,17 @@ class Installer
      */
     public function update()
     {
-        $this->printLine();
-        //$this->composerUpdate();
-        $this->updateRootComposerFile();
-        $this->composerDumpAutoload();
-        $this->composerInstall();
+        try {
+            $this->printLine();
+            Logger::log("UPDATE module={$this->moduleName} file={$this->composerFile}", true);
+            //$this->composerUpdate();
+            //$this->updateRootComposerFile();
+            //$this->composerDumpAutoload();
+            //$this->composerInstall();
+            $this->requirePackages();
+        } catch (\Exception $e) {
+
+        }
     }
 
     /**
@@ -103,12 +121,54 @@ class Installer
                 continue;
             }
 
-            $values = isset($rootDefinition[$mainKey][$subKey])
-                ? array_merge($rootDefinition[$mainKey][$subKey], $definition[$mainKey][$subKey])
-                : $definition[$mainKey][$subKey];
+            $values = $definition[$mainKey][$subKey];
 
-            $manipulator->addSubNode($mainKey, $subKey, $values);
+            foreach ($values as $key => $path) {
+                $values[$key] = 'modules/'.$this->moduleName.'/'.$path;
+            }
+
+            $rootValues = isset($rootDefinition[$mainKey][$subKey])
+                ? array_merge($rootDefinition[$mainKey][$subKey], $values) : $values;
+
+            $manipulator->addSubNode($mainKey, $subKey, $rootValues);
         }
+    }
+
+    /**
+     *
+     */
+    protected function requirePackages()
+    {
+        $definition = $this->composerJson->read();
+
+        $packages = $this->getPackages($definition['require']);
+
+        $this->composerRequire($packages);
+    }
+
+    /**
+     *
+     */
+    protected function requireDevPackages()
+    {
+        $definition = $this->composerJson->read();
+
+        $packages = $this->getPackages($definition['require-dev']);
+
+        $this->composerRequire($packages);
+    }
+
+    /**
+     *
+     */
+    protected function getPackages($requireDefinition)
+    {
+        $packages = [];
+        foreach ($requireDefinition as $package => $version) {
+            $packages[] = $package.':'.$version;
+        }
+
+        return $packages;
     }
 
     /**
@@ -116,10 +176,7 @@ class Installer
      */
     protected function composerInstall()
     {
-        $input = new ArrayInput(array('command' => 'install'));
-        $application = new Application();
-        $application->setAutoExit(false);
-        $application->run($input);
+        $this->composer(array('command' => 'install'));
     }
 
     /**
@@ -127,10 +184,15 @@ class Installer
      */
     protected function composerUpdate()
     {
-        $input = new ArrayInput(array('command' => 'update'));
-        $application = new Application();
-        $application->setAutoExit(false);
-        $application->run($input);
+        $this->composer(array('command' => 'update'));
+    }
+
+    /**
+     *
+     */
+    protected function composerRequire($packages)
+    {
+        $this->composer(array('command' => 'require', 'packages' => $packages));
     }
 
     /**
@@ -138,10 +200,25 @@ class Installer
      */
     protected function composerDumpAutoload()
     {
-        $input = new ArrayInput(array('command' => 'dump-autoload'));
+        $this->composer(array('command' => 'dump-autoload'));
+    }
+
+    /**
+     * @param $args
+     * @throws \Exception
+     */
+    protected function composer($args)
+    {
+        ini_set('memory_limit', '4G');
+
+        $input = new ArrayInput($args);
         $application = new Application();
         $application->setAutoExit(false);
-        $application->run($input);
+        try {
+            $application->run($input, $this->output);
+        } catch (\Exception $e) {
+
+        }
     }
 
     /**
