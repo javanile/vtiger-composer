@@ -209,6 +209,7 @@ class Installer
      */
     protected function composer($args)
     {
+        putenv('COMPOSER_HOME='.getcwd().'/test/composer');
         ini_set('memory_limit', '4G');
 
         $input = new ArrayInput($args);

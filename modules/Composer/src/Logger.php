@@ -18,4 +18,22 @@ class Logger
             file_put_contents('logs/composer.log', $message."\n", FILE_APPEND);
         }
     }
+
+    public static function write($messages)
+    {
+        $messages = (array) $messages;
+        foreach ($messages as $message) {
+            $message = strip_tags($message);
+            file_put_contents('logs/composer.log', $message, FILE_APPEND);
+        }
+    }
+
+    public static function writeln($messages)
+    {
+        $messages = (array) $messages;
+        foreach ($messages as $message) {
+            $message = strip_tags($message);
+            file_put_contents('logs/composer.log', $message."\n", FILE_APPEND);
+        }
+    }
 }

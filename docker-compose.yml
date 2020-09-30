@@ -56,6 +56,7 @@ services:
       - MYSQL_ROOT_PASSWORD=secret
       - COMPOSER_DISABLE_XDEBUG_WARN=1
     volumes:
+      - ./tests/logs:/var/lib/vtiger/logs
       - vtiger-test:/var/lib/vtiger
     ports:
       - 8090:80

@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca789492-ba9e-460d-8123-3138f9240ddb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Factory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Logger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Output.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/logs/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/Composer.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Composer.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/src/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/compile" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/composer" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/bin/composer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Logger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Output.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Output.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/IO/ConsoleIO.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/IO/ConsoleIO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/composer/src/Composer/Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/justinrainbow/json-schema/bin/validate-json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/justinrainbow/json-schema/bin/validate-json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/seld/jsonlint/bin/jsonlint" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/seld/jsonlint/bin/jsonlint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/input_definition_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/stream_output_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/console/Tests/Fixtures/stream_output_file.txt" afterDir="false" />
@@ -36,7 +34,6 @@
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/one/b/d.neon" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/r+e.gex[c]a(r)s/dir/bar.dat" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/r+e.gex[c]a(r)s/dir/bar.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/with space/foo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/finder/Tests/Fixtures/with space/foo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/symfony/process/Tests/ErrorProcessInitiator.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/symfony/process/Tests/ErrorProcessInitiator.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601381101218</updated>
       <workItem from="1601381102279" duration="21750000" />
-      <workItem from="1601467852645" duration="10681000" />
+      <workItem from="1601467852645" duration="12597000" />
     </task>
     <task id="LOCAL-00001" summary="real first commit">
       <created>1601388158482</created>
@@ -127,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601403784128</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix installer">
+      <created>1601483341854</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601483341854</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,21 +153,21 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1601482969905" />
-    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2" timestamp="1601403783966">
+    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2" timestamp="1601483341740">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1601403783966" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601403785354">
+    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1601483341740" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601483343027">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601403785354" />
-    <state x="651" y="292" width="803" height="522" key="find.popup" timestamp="1601480384316">
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601483343027" />
+    <state x="651" y="292" width="803" height="548" key="find.popup" timestamp="1601484274112">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="651" y="292" width="803" height="522" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1601480384316" />
-    <state x="685" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601481847971">
+    <state x="651" y="292" width="803" height="548" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1601484274112" />
+    <state x="685" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601483673218">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="685" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1601481847971" />
+    <state x="685" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1601483673218" />
   </component>
 </project>

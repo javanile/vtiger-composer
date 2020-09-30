@@ -57,7 +57,7 @@ class Stderr extends StreamOutput
 
     public function writeln($messages, $options = 0)
     {
-        $this->log($messages);
+        Logger::log($messages);
         parent::writeln($messages, $options);
     }
 }

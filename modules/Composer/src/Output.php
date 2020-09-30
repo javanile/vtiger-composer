@@ -47,13 +47,13 @@ class Output extends ConsoleOutput
 {
     public function write($messages, $newline = false, $options = 0)
     {
-        Logger::log($messages);
+        Logger::write($messages);
         parent::write($messages, $newline, $options);
     }
 
     public function writeln($messages, $options = 0)
     {
-        $this->log($messages);
+        Logger::writeln($messages);
         parent::writeln($messages, $options);
     }
 }
