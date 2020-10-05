@@ -12,31 +12,8 @@
 
 namespace Javanile\VtigerComposer;
 
-use Composer\Config\JsonConfigSource;
-use Composer\Json\JsonFile;
-use Composer\IO\IOInterface;
-use Composer\Package\Archiver;
-use Composer\Package\Version\VersionGuesser;
-use Composer\Repository\RepositoryManager;
-use Composer\Repository\RepositoryFactory;
-use Composer\Repository\WritableRepositoryInterface;
-use Composer\Util\Filesystem;
-use Composer\Util\Platform;
-use Composer\Util\ProcessExecutor;
-use Composer\Util\RemoteFilesystem;
-use Composer\Util\Silencer;
-use Composer\Plugin\PluginEvents;
-use Composer\EventDispatcher\Event;
-use Javanile\VtigerComposer\Output;
-use Seld\JsonLint\DuplicateKeyException;
 use Symfony\Component\Console\Formatter\OutputFormatter;
-use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Output\ConsoleOutput;
-use Composer\EventDispatcher\EventDispatcher;
-use Composer\Autoload\AutoloadGenerator;
-use Composer\Package\Version\VersionParser;
-use Composer\Downloader\TransportException;
-use Seld\JsonLint\JsonParser;
 use Composer\Factory as ComposerFactory;
 
 /**
@@ -63,5 +40,17 @@ class Factory
         $output->setErrorOutput($stderr);
 
         return $output;
+    }
+
+    /**
+     * Creates a Logger instance
+     *
+     * @return Logger
+     */
+    public static function createLogger()
+    {
+        $logger = new Logger();
+
+        return $logger;
     }
 }

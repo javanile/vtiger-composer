@@ -45,15 +45,24 @@ use Composer\Factory as ComposerFactory;
  */
 class Output extends ConsoleOutput
 {
+    protected $logger;
+
+    public function setLogger($logger)
+    {
+        $this->logger = $logger;
+    }
+
     public function write($messages, $newline = false, $options = 0)
     {
-        Logger::write($messages);
+        $this->logger->write($messages);
+
         parent::write($messages, $newline, $options);
     }
 
     public function writeln($messages, $options = 0)
     {
-        Logger::writeln($messages);
+        $this->logger->writeln($messages);
+
         parent::writeln($messages, $options);
     }
 }

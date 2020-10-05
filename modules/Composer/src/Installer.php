@@ -41,6 +41,11 @@ class Installer
 
     /**
      *
+     */
+    protected $logger;
+
+    /**
+     *
      *
      * @param $moduleName
      * @param $composerFile
@@ -53,16 +58,16 @@ class Installer
         $this->rootComposerFile = getcwd() . '/composer.json';
         $this->rootComposerJson = new JsonFile($this->rootComposerFile);
         $this->output = Factory::createOutput();
+        $this->logger = Factory::createLogger();
     }
 
     /**
-     * @throws \Exception
      */
     public function install()
     {
         try {
             $this->printLine();
-            Logger::log("INSTALL module={$this->moduleName} file={$this->composerFile}", true);
+            $this->logger->log("INSTALL module={$this->moduleName} file={$this->composerFile}", true);
             //$this->composerUpdate();
             $this->updateRootComposerFile();
             //$this->composerDumpAutoload();
@@ -74,7 +79,6 @@ class Installer
     }
 
     /**
-     * @throws \Exception
      */
     public function update()
     {
