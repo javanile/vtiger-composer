@@ -46,6 +46,11 @@ class Installer
 
     /**
      *
+     */
+    protected $profile;
+
+    /**
+     * Installer constructor.
      *
      * @param $moduleName
      * @param $composerFile
@@ -59,20 +64,26 @@ class Installer
         $this->rootComposerJson = new JsonFile($this->rootComposerFile);
         $this->output = Factory::createOutput();
         $this->logger = Factory::createLogger();
+
+        $this->output->setLogger($this->logger);
     }
 
     /**
      */
     public function install()
     {
+        $installTime = time();
         try {
             $this->printLine();
             $this->logger->log("INSTALL module={$this->moduleName} file={$this->composerFile}", true);
             //$this->composerUpdate();
             $this->updateRootComposerFile();
+            $this->applyPrestissimo();
             //$this->composerDumpAutoload();
             //$this->composerInstall();
             $this->requirePackages();
+            $installTime = time() - $installTime;
+            $this->printLine("Install take {$installTime} sec.");
         } catch (\Exception $e) {
 
         }
@@ -101,6 +112,9 @@ class Installer
     protected function updateRootComposerFile()
     {
         $this->printLine('Updating root composer.json file');
+        if (!file_exists($this->rootComposerJson->getPath())) {
+            file_put_contents($this->rootComposerJson->getPath(), '{}');
+        }
         $contents = file_get_contents($this->rootComposerJson->getPath());
         $manipulator = new JsonManipulator($contents);
         $definition = $this->composerJson->read();
@@ -189,6 +203,14 @@ class Installer
     protected function composerUpdate()
     {
         $this->composer(array('command' => 'update'));
+    }
+
+    /**
+     *
+     */
+    protected function applyPrestissimo()
+    {
+        $this->composer(array('command' => 'require', 'packages' => ['hirak/prestissimo']));
     }
 
     /**

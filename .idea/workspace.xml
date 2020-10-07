@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca789492-ba9e-460d-8123-3138f9240ddb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/Composer/models/Module.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/Composer.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Composer.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/Composer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/Composer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Factory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/src/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Installer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Logger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/src/Output.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Output.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/src/composer.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -39,7 +44,10 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ca789492-ba9e-460d-8123-3138f9240ddb" name="Default Changelist" comment="" />
@@ -51,6 +59,7 @@
       <workItem from="1601467852645" duration="13476000" />
       <workItem from="1601629912093" duration="2320000" />
       <workItem from="1601910965025" duration="1442000" />
+      <workItem from="1602106520292" duration="5694000" />
     </task>
     <task id="LOCAL-00001" summary="real first commit">
       <created>1601388158482</created>
@@ -119,7 +128,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -145,9 +154,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601485438013" />
-    <state x="651" y="292" width="803" height="548" key="find.popup" timestamp="1601484274112">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="463" y="213" width="794" height="522" key="find.popup" timestamp="1602107224063">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="463" y="213" width="794" height="522" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1602107224063" />
     <state x="651" y="292" width="803" height="548" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1601484274112" />
     <state x="685" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601483673218">
       <screen x="0" y="27" width="1920" height="1053" />

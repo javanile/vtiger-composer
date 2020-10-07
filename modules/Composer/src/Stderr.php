@@ -49,15 +49,28 @@ use Symfony\Component\Console\Output\StreamOutput;
  */
 class Stderr extends StreamOutput
 {
+    protected $logger;
+
+    public function setLogger($logger)
+    {
+        $this->logger = $logger;
+    }
+
     public function write($messages, $newline = false, $options = 0)
     {
-        Logger::log($messages);
+        if (null !== $this->logger) {
+            $this->logger->write($messages, $newline);
+        }
+
         parent::write($messages, $newline, $options);
     }
 
     public function writeln($messages, $options = 0)
     {
-        Logger::log($messages);
+        if (null !== $this->logger) {
+            $this->logger->writeln($messages);
+        }
+
         parent::writeln($messages, $options);
     }
 }
