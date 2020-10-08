@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca789492-ba9e-460d-8123-3138f9240ddb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/Composer/models/Module.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Composer.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Composer.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/Composer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/Composer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Output.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Output.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +44,8 @@
       <workItem from="1601381102279" duration="21750000" />
       <workItem from="1601467852645" duration="13476000" />
       <workItem from="1601629912093" duration="2320000" />
-      <workItem from="1601910965025" duration="1442000" />
+      <workItem from="1601910965025" duration="1607000" />
+      <workItem from="1601913962709" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="real first commit">
       <created>1601388158482</created>
@@ -115,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601485436786</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix installer">
+      <created>1601912693874</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601912693874</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,14 +139,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1601912388975" />
-    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2" timestamp="1601485436639">
+    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2" timestamp="1601912693509">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1601485436639" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601485438013">
+    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1601912693509" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601912694939">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601485438013" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601912694939" />
     <state x="651" y="292" width="803" height="548" key="find.popup" timestamp="1601484274112">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
