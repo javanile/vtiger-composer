@@ -253,6 +253,8 @@ class Installer
      */
     protected function printLine($string)
     {
+        $this->logger->writeln($string);
+
         if (php_sapi_name() === 'cli') {
             echo $string."\n";
         }

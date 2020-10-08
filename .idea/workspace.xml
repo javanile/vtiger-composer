@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ca789492-ba9e-460d-8123-3138f9240ddb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Composer.zip" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Composer.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Composer/models/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/models/Module.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Composer/src/Installer.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Installer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Logger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Output.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Output.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/src/Stderr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/src/composer.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Composer/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +51,7 @@
       <workItem from="1601467852645" duration="13476000" />
       <workItem from="1601629912093" duration="2320000" />
       <workItem from="1601910965025" duration="1442000" />
-      <workItem from="1602106520292" duration="5694000" />
+      <workItem from="1602106520292" duration="6397000" />
     </task>
     <task id="LOCAL-00001" summary="real first commit">
       <created>1601388158482</created>
@@ -124,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601485436786</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="introducing prestissimo">
+      <created>1602112285421</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602112285422</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +134,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="real first commit" />
     <MESSAGE value="fix installer" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix installer" />
+    <MESSAGE value="introducing prestissimo" />
+    <option name="LAST_COMMIT_MESSAGE" value="introducing prestissimo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="644" y="355" width="622" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601630221578">
@@ -146,13 +146,15 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1601912388975" />
-    <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2" timestamp="1601485436639">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="363" y="93" width="912" height="613" key="CommitChangelistDialog2" timestamp="1602112284822">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="363" y="93" width="912" height="613" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1602112284822" />
     <state x="510" y="121" width="889" height="871" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1601485436639" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1601485438013">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="395" y="211" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602112287318">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="395" y="211" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1602112287318" />
     <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601485438013" />
     <state x="463" y="213" width="794" height="522" key="find.popup" timestamp="1602107224063">
       <screen x="0" y="27" width="1366" height="741" />
