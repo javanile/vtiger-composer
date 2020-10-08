@@ -9,7 +9,7 @@ use Symfony\Component\Console\Input\ArrayInput;
 
 class Logger
 {
-    public static function log($messages, $timestamp = false)
+    public function log($messages, $timestamp = false)
     {
         $messages = (array) $messages;
         $timestamp = $timestamp ? date('Y-m-d H:i:s').' ' : '';
@@ -19,21 +19,37 @@ class Logger
         }
     }
 
-    public static function write($messages, $newline = false)
+    public function write($messages, $newline = false)
     {
         $messages = (array) $messages;
         foreach ($messages as $message) {
             $message = strip_tags($message);
+            if ($this->ignoreMessage($message)) {
+                continue;
+            }
             file_put_contents('logs/composer.log', $message . ($newline ? "\n" : ''), FILE_APPEND);
         }
     }
 
-    public static function writeln($messages)
+    /**
+     * @param $messages
+     */
+    public function writeln($messages)
     {
-        $messages = (array) $messages;
-        foreach ($messages as $message) {
-            $message = strip_tags($message);
-            file_put_contents('logs/composer.log', $message."\n", FILE_APPEND);
+        $this->write($messages, true);
+    }
+
+    /**
+     * @param $message
+     */
+    public function ignoreMessage($message)
+    {
+        if (preg_match("/^[\x08 ]+$/", $message)) {
+            return true;
+        } elseif (preg_match("/^Downloading \((.+)\)/", $message, $matches)) {
+            return !in_array($matches[1], ['100%']);
         }
+
+        return false;
     }
 }
