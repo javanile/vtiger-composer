@@ -37,6 +37,7 @@ use Composer\Package\Version\VersionParser;
 use Composer\Downloader\TransportException;
 use Seld\JsonLint\JsonParser;
 use Composer\Factory as ComposerFactory;
+use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * Creates a configured instance of composer.
@@ -47,21 +48,38 @@ class Output extends ConsoleOutput
 {
     protected $logger;
 
+    protected $errorOutput;
+
     public function setLogger($logger)
     {
         $this->logger = $logger;
+        $this->errorOutput->setLogger($logger);
+    }
+
+    /**
+     * @param OutputInterface $errorOutput
+     */
+    public function setErrorOutput(OutputInterface $errorOutput)
+    {
+        $this->errorOutput = $errorOutput;
+
+        parent::setErrorOutput($errorOutput);
     }
 
     public function write($messages, $newline = false, $options = 0)
     {
-        $this->logger->write($messages);
+        if (null !== $this->logger) {
+            $this->logger->write($messages, $newline);
+        }
 
         parent::write($messages, $newline, $options);
     }
 
     public function writeln($messages, $options = 0)
     {
-        $this->logger->writeln($messages);
+        if (null !== $this->logger) {
+            $this->logger->writeln($messages);
+        }
 
         parent::writeln($messages, $options);
     }

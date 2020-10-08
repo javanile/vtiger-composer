@@ -19,12 +19,12 @@ class Logger
         }
     }
 
-    public static function write($messages)
+    public static function write($messages, $newline = false)
     {
         $messages = (array) $messages;
         foreach ($messages as $message) {
             $message = strip_tags($message);
-            file_put_contents('logs/composer.log', $message, FILE_APPEND);
+            file_put_contents('logs/composer.log', $message . ($newline ? "\n" : ''), FILE_APPEND);
         }
     }
 
